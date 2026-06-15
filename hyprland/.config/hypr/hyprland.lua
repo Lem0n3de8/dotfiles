@@ -32,6 +32,7 @@ require("input")
 
 -- Set programs that you use
 local lockSession = "hyprlock"
+local idleManager = "hypridle"
 local terminal    = "kitty"
 local fileManager = "dolphin"
 local menu        = "hyprlauncher"
@@ -48,6 +49,7 @@ local menu        = "hyprlauncher"
 --
 hl.on("hyprland.start", function () 
    hl.exec_cmd(terminal)
+   hl.exec_cmd(idleManager)
    --hl.exec_cmd("nm-applet")
    hl.exec_cmd("waybar")-- & hyprpaper & firefox")
  end)
